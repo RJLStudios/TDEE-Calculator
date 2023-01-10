@@ -45,51 +45,80 @@
                        <div class="form-item">
                          <label for="givengender" class="form-item">GENDER</label>
                          <div class="gender-form">
-                          <div class="gender-field gender-field-m">
-                            <input type="radio" class="gender-form-input gender-form-input-error" name="givengender" value="male" id="givengender"> 
+                          <div class="gender-field gender-field-m gender-field-input-error">
+                            <input type="radio" class="gender-form-input g-form-input-error" name="givengender" value="male" id="givengender"> 
                             <label for="given-gender-male">Male</label>
                           </div>
-                          <div class="gender-field gender-field-f">
-                            <input type="radio" class="gender-form-input gender-form-input-error" name="givengender" value="female" id="givengender"> 
+                          <div class="gender-field gender-field-f gender-field-input-error">
+                            <input type="radio" class=" g-form-input-error gender-form-input" name="givengender" value="female" id="givengender"> 
                             <label for="given-gender-female">Female</label>
                           </div>
-                         </div>   
+                          
+                         </div>
+                         <span class="gender-form-error">Please select your gender</span>  
                        </div>                  
                     </form>
                   </div>
 
                   <div class='form-question'>
-                    <form class="weight"> 
+                    <form class="height"> 
                        <div class="form-item">
-                         <label for="givenweight" class="form-item">WEIGHT</label>
-                         <input type="text" class="form-input form-input-error" name="givenweight" id="givenweight" placeholder="Enter your weight">
-                         <span class="form-error">Enter your weight in lbs</span>
+                         <label for="givenweight" class="form-item">HEIGHT</label>
+                         <div class="user-input-height">
+                          
+                            <div class="height-feet">
+                              <input type="number" class="height-input form-input height-form-input-error" name="givenheight" id="givenheight" min="3'" max="9'" placeholder="Feet">
+                        
+                            </div>
+                             
+                            
+                            <div class="height-inches">
+                             <input type="number" class="height-input form-input form-input-error height-form-input-error" name="givenheightt" id="givenheight" placeholder="Inches">
+                             
+                            </div>
+                          </div>  
+                         </div>
+                         
+                         <span class="height-form-error">Enter your height</span>
                        </div>                  
                     </form>
-                  </div>
+             
+             
+                    <div class='form-question'>
+                      <form class="bf"> 
+                         <div class="form-item">
+                           <label for="givenbf%" class="form-item">BODY FAT (%)</label>
+                           <input type="text" class="bf-form-input " name="givenbf%" id="givenbf%" placeholder="Enter your bodyfat percentage (optional)">
+                         </div>                  
+                      </form>
+                    </div>
 
-                  <div class='form-question'>
-                    <form class="activity-level"> 
-                       <div class="form-item">
-                         <label for="givenactivity" class="form-item">ACTIVITY LEVEL</label>
-                         <input type="text" class="form-input form-input-error" name="givenactivity" id="givenactivity" placeholder="Enter your activity level">
-                         <span class="form-error">Enter your relative activity level</span>
-                       </div>                  
-                    </form>
-                  </div>
-
-                  <div class='form-question'>
-                    <form class="bf"> 
-                       <div class="form-item">
-                         <label for="givenbf%" class="form-item">BODY FAT PERCENTAGE</label>
-                         <input type="text" class="form-input " name="givenbf%" id="givenbf%" placeholder="Enter your bodyfat percentage (optional)">
-                       </div>                  
-                    </form>
-                  </div>
+                    <div class='form-question'>
+                      <form class="activity-level"> 
+                         <div class="form-item ">
+                           <label for="givenactivity" class="form-item">ACTIVITY LEVEL</label>
+                           <select type="text" size="1" class="activity-form" name="givenactivity" id="givenactivity" >
+                             <option value="sedentary">Sedentary (Little or no exercise)</option>
+                             <option value="light"> Lightly active  (Little exercise/ sports 3-5 days a week)</option>
+                             <option value="moderate">Moderately active (Moderate exercise/ sports 3-5 days a week)</option>
+                             <option value="very">Very active (Hard exercise/ sports 6-7 days a week/ physical labour)</option>
+                           </select>
+                           
+                         </div>                  
+                      </form>
+                    </div>
+             
+                    
+                
    
                   <div class="submit">
                     <button id="inputBtn" onclick="Submit();">Submit</button>
                   </div>
+
+                  </div>
+
+                 
+
               </div>
                
                

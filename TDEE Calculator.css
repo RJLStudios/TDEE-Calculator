@@ -40,7 +40,6 @@ letter-spacing: 2px;
 border-radius: 4px;
 }
 .app-forms {
-
     border: 2px solid #d8d8d8;;
     height: 200px auto ;
     border-radius: 4px;
@@ -48,7 +47,6 @@ border-radius: 4px;
 }
 
 .form-question {
-  
     padding: 8px;
     height: 100px auto;
     /*border: 2px solid red;*/
@@ -90,6 +88,7 @@ align-self: flex-start;
     background: #f0f0f0;
     transition: background 0.25s, border-color 0.25s, color 0.25s;
 }
+/*INTERACTIVE STYLES*/
 
 /*styles for input field once user interacts with it*/
 .form-input:focus {
@@ -97,57 +96,117 @@ align-self: flex-start;
 }
 
 /*styles for placeholder text*/
-
 .form-input::placeholder {
     color: #bbbbbb;
 }
 
-/*styles for error input field*/
+/*styles for error input fields/ messages*/
 
-.form-input-error {
+.form-input-error{
     color: #d50000;
     background: #fff8f8;
     border-color: #d50000;
-    
 }
+
+.gender-field-input-error {
+    background: #fff8f8;
+    border-color: #d50000;
+    font-weight: 500;
+}
+
 
 .form-input-error::placeholder{
     color:#ffbfbf;
 }
 
-.form-error {
+.height-form-input-error {
+   color: #d50000;
+    background: #fff8f8;
+    border-color: #d50000 !important;
+}
+
+/*input field message styles*/
+.form-error, .gender-form-error, .height-form-error{
     padding-top: 10px;
     font-size: 0.8em;
     color: #d50000;
     font-weight: 500;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 /* + operator adds the next 'child' under a parent element i.e only procs when the former sibling exists */
-.form-input-error + .form-error {
+.form-input-error + .form-error{
   visibility: visible;
 }
 /*GENDER INPUT FIELD STYLES*/
 .gender-form {
     display: flex;
     flex-direction:row;
-   
 }
+
 .gender-field {
 border: 2px solid black;
 border-radius: 4px;
 padding: 10px ;
 height: 120px auto;
 cursor: pointer;
-}
+font-size: .9em
 
+}
 
 .gender-field-m, .gender-field-f{
     width: 190px;
-    margin: 0px 16px 0px 3px
+    margin: 0px 16px 0px 3px;
 }
+
+
+
+/*HEIGHT INPUT FIELD STYLES*/
+.user-input-height {
+    display: flex;
+    flex-direction: row;
+}
+.height-feet, .height-inches {
+    width: 25px auto;
+    margin: 0px 25px 0px 3px;
+}
+.height-input {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px ;
+    height: 22px ;
+    font-size: 0.9em;  
+}
+
+
+/*ACTIVITY FORM STYLES*/
+.activity-form {
+margin-bottom: 40px;
+width: 100%;
+    max-width: 425px;
+    border: 2px solid black;
+    padding: 0.8em;
+    font-size: 0.9em;
+    border-radius: 4px;
+    background-color: white;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+/*BODY FAT PERCENTAGE STYLES*/
+.bf-form-input{
+    border: 2px solid black;
+border-radius: 4px;
+padding: 15px ;
+height: 120px auto;
+width: 425px;
+font-size: 0.9em;
+
+}
+/*SUBMIT BUTTON STYLES*/
 .submit {
     padding: 0px 0px 16px 12px;
+
+
 }
 
 #inputBtn {
@@ -156,6 +215,8 @@ cursor: pointer;
     font: inherit;
     color: white;
     cursor: pointer;
-    border: none;
+
+
 
 }
+
