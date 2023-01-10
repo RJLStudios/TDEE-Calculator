@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="TDEE Calculator.css">
+        <script type="text/javascript" src="TDEE Calculator.js"></script>
+    </head>
+<header class="header">
+    <div class="header-left"></div>
+</header>
+    <body>
+     <main class="main">
+        <div class="main-article">
+            <div class="calculator-app">
+            <div class="article-heading"></div>
+                <h1 class="main-heading">TDEE Calculator: Calculate Your Maintenance Calories</h1>
+
+                <p class="main-description"> Trying to dial in your nutrition for your physique or athletic goals? Figuring out your maintenance calories can be daunting when there are so many factors involved. This calculator will help you get more systematic about eating for your goals!</p>
+
+                <p class="sub-description">This calculator is designed to give you a customized estimate based on your age, weight, activity level and body fat percentage. (Whilst the latter is not essential, the more information you contribute, the more accurate your estimate will be. To put things plainly, TDEE is an average caloric intake guideline for maintaining your weight each day based on the number of calories you burn each day. Eat more than this amount and you can expect to gain weight. Eat less than this amount and you're set to lost weight. Once you have your number, you can use it to determine relatively how many calories to eat daily to lose, gain or maintain weight. </p>
+ 
+                <p class="disclaimer-description">Please note that a TDEE is only an <strong>estimate</strong> for what your daily expenditure is. Factors such as activity level, macronutrient composition, your unique body composition and varying goals can easily affect your number, especially if you lift weights. BMI calculators should only be used as general guidelines and do not take into account your body fat percentage, for example. </p>
+                
+
+              <div class="app-forms">
+                <div class="app-heading">TDEE CALCULATOR</div>
+
+                <div class='form-question'>
+                    <form class="age">
+                       <div class="form-title"></div>
+                       <p class="form-desc"></p>  
+                       <div class="form-item">
+                         <label for="givenages" class="form-item">AGE</label>
+                         <input type="number" class="form-input form-input-error" name="givenages" id="givenages" min="10" max="80" placeholder="Enter your age">
+                         <span class="form-error">Enter an age between 10 and 80</span>
+                       </div>                  
+                    </form>
+                  </div>
+
+                  <div class='form-question'>
+                    <form class="gender"> 
+                       <div class="form-item">
+                         <label for="givengender" class="form-item">GENDER</label>
+                         <div class="gender-form">
+                          <div class="gender-field gender-field-m">
+                            <input type="radio" class="gender-form-input gender-form-input-error" name="givengender" value="male" id="givengender"> 
+                            <label for="given-gender-male">Male</label>
+                          </div>
+                          <div class="gender-field gender-field-f">
+                            <input type="radio" class="gender-form-input gender-form-input-error" name="givengender" value="female" id="givengender"> 
+                            <label for="given-gender-female">Female</label>
+                          </div>
+                         </div>   
+                       </div>                  
+                    </form>
+                  </div>
+
+                  <div class='form-question'>
+                    <form class="weight"> 
+                       <div class="form-item">
+                         <label for="givenweight" class="form-item">WEIGHT</label>
+                         <input type="text" class="form-input form-input-error" name="givenweight" id="givenweight" placeholder="Enter your weight">
+                         <span class="form-error">Enter your weight in lbs</span>
+                       </div>                  
+                    </form>
+                  </div>
+
+                  <div class='form-question'>
+                    <form class="activity-level"> 
+                       <div class="form-item">
+                         <label for="givenactivity" class="form-item">ACTIVITY LEVEL</label>
+                         <input type="text" class="form-input form-input-error" name="givenactivity" id="givenactivity" placeholder="Enter your activity level">
+                         <span class="form-error">Enter your relative activity level</span>
+                       </div>                  
+                    </form>
+                  </div>
+
+                  <div class='form-question'>
+                    <form class="bf"> 
+                       <div class="form-item">
+                         <label for="givenbf%" class="form-item">BODY FAT PERCENTAGE</label>
+                         <input type="text" class="form-input " name="givenbf%" id="givenbf%" placeholder="Enter your bodyfat percentage (optional)">
+                       </div>                  
+                    </form>
+                  </div>
+   
+                  <div class="submit">
+                    <button id="inputBtn" onclick="Submit();">Submit</button>
+                  </div>
+              </div>
+               
+               
+            
+            </div>
+            </div>
+        </div> 
+     </main>
+    
+      
+    </body>
+</html>

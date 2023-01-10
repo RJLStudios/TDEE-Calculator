@@ -1,0 +1,161 @@
+html {
+    padding: 0l;
+    margin: 0;
+    font-family: lato;
+}
+
+header {}
+
+main {}
+
+.main-article {
+    border: 2px solid #d8d8d8;
+    max-width: 900px;
+    margin: 100px 100px auto;
+    padding: 0px 40px;
+    padding-bottom: 40px;
+}
+
+.calculator-app {
+   
+    line-height: 1.2;
+}
+
+.main-heading {
+    font-size: 36px;
+}
+
+.main-description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.app-heading {
+color: white;
+background: black;
+font-size: 30px;
+padding: 4px 0px 0px 6px;
+font-weight: 700;
+letter-spacing: 2px;
+border-radius: 4px;
+}
+.app-forms {
+
+    border: 2px solid #d8d8d8;;
+    height: 200px auto ;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-question {
+  
+    padding: 8px;
+    height: 100px auto;
+    /*border: 2px solid red;*/
+    font-size: 20px;
+    font-weight: 650;  
+}
+    
+
+.form *{
+    box-sizing: border-box;
+}
+
+.form-title {
+    font-size: 2em;
+    
+}
+
+/*lays form elements on top of each other in a column*/
+.form-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+/* essentially creates a fit-content style for form children */
+.form-item > * {
+align-self: flex-start;
+}
+
+/*removes default css styling for all browsers*/
+.form-input {
+    -webkit-appearance: none;
+    width: 100%;
+    max-width: 425px;
+
+    padding: 0.8em;
+    font-size: 0.9em;
+    border-radius: 4px;
+    background: #f0f0f0;
+    transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+/*styles for input field once user interacts with it*/
+.form-input:focus {
+    background:#ffffff;
+}
+
+/*styles for placeholder text*/
+
+.form-input::placeholder {
+    color: #bbbbbb;
+}
+
+/*styles for error input field*/
+
+.form-input-error {
+    color: #d50000;
+    background: #fff8f8;
+    border-color: #d50000;
+    
+}
+
+.form-input-error::placeholder{
+    color:#ffbfbf;
+}
+
+.form-error {
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #d50000;
+    font-weight: 500;
+    visibility: hidden;
+}
+
+/* + operator adds the next 'child' under a parent element i.e only procs when the former sibling exists */
+.form-input-error + .form-error {
+  visibility: visible;
+}
+/*GENDER INPUT FIELD STYLES*/
+.gender-form {
+    display: flex;
+    flex-direction:row;
+   
+}
+.gender-field {
+border: 2px solid black;
+border-radius: 4px;
+padding: 10px ;
+height: 120px auto;
+cursor: pointer;
+}
+
+
+.gender-field-m, .gender-field-f{
+    width: 190px;
+    margin: 0px 16px 0px 3px
+}
+.submit {
+    padding: 0px 0px 16px 12px;
+}
+
+#inputBtn {
+    padding: 12px 24px;
+    background: blue;
+    font: inherit;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
